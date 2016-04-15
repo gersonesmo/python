@@ -142,7 +142,6 @@ def suma(a, b):
 asd = "La suma es: "
 
 print asd + str(suma (1, 2))
-"""
 
 # Modify this function to return a list of strings as defined above
 def list_benefits():
@@ -164,3 +163,4 @@ def name_the_benefits_of_functions():
 name_the_benefits_of_functions()
 
 
+"""
