@@ -8,14 +8,17 @@ for x in range(50):
     random_ong = random.randint(0, 10)
     random_sonsio = random.randint(0, 10)
     if random_ong < 10 and random_sonsio < 10:
-        print "00" + str(random_ong) + " " + "00" + str(random_sonsio) + " " + random_day.strftime(
-            "%d/%m/%Y") + " " + str("%.2f" % random_qtty)
+        print 'VALUES(' + "\'00" + str(random_ong) + "\', \'" + "00" + str(random_sonsio) + "\' TO_DATE(\'" + random_day.strftime(
+            "%d/%m/%Y") + "\', \'dd/mm/yyyy\'), " + str("%.2f" % random_qtty) + ');'
     elif random_ong == 10 and random_sonsio < 10:
-        print "0" + str(random_ong) + " " + "00" + str(random_sonsio) + " " + random_day.strftime(
-            "%d/%m/%Y") + " " + str("%.2f" % random_qtty)
+        print 'VALUES(' + "\'0" + str(random_ong) + "\', \'" + "00" + str(
+            random_sonsio) + "\' TO_DATE(\'" + random_day.strftime(
+                "%d/%m/%Y") + "\', \'dd/mm/yyyy\'), " + str("%.2f" % random_qtty) + ');'
     elif random_ong == 10 and random_sonsio == 10:
-        print "0" + str(random_ong) + " " + "0" + str(random_sonsio) + " " + random_day.strftime(
-            "%d/%m/%Y") + " " + str("%.2f" % random_qtty)
+        print 'VALUES(' + "\'0" + str(random_ong) + "\', \'" + "0" + str(
+            random_sonsio) + "\' TO_DATE(\'" + random_day.strftime(
+                "%d/%m/%Y") + "\', \'dd/mm/yyyy\'), " + str("%.2f" % random_qtty) + ');'
     else:
-        print "00" + str(random_ong) + " " + "0" + str(random_sonsio) + " " + random_day.strftime(
-            "%d/%m/%Y") + " " + str("%.2f" % random_qtty)
+        print 'VALUES(' + "\'00" + str(random_ong) + "\', \'" + "0" + str(
+            random_sonsio) + "\' TO_DATE(\'" + random_day.strftime(
+                "%d/%m/%Y") + "\', \'dd/mm/yyyy\'), " + str("%.2f" % random_qtty) + ');'

@@ -13,23 +13,23 @@ for x in range(50):
     random_project = random.randint(0,20)
     random_action = random.randint(0,20)
     if random_ong < 10 and random_project < 10 and random_action < 10:
-        print "00" + str(random_ong) + " " + "00" + str(random_project) + " " + "00" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" + "\'00" + str(random_ong) + "\', \'" + "00" + str(random_project) + "\', \'" + "00" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong == 10 and random_project < 10 and random_action < 10:
-        print "0" + str(random_ong) + " " + "00" + str(random_project) + " " + "00" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +  "\'0" + str(random_ong) + "\', \'" + "00" + str(random_project) + "\', \'" + "00" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong == 10 and random_project >= 10 and random_action < 10:
-        print "0" + str(random_ong) + " " + "0" + str(random_project) + " " + "00" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +   "\'0" + str(random_ong) + "\', \'" + "0" + str(random_project) + "\', \'" + "00" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong == 10 and random_project >= 10 and random_action >= 10:
-        print "0" + str(random_ong) + " " + "0" + str(random_project) + " " + "0" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +   "\'0" + str(random_ong) + "\', \'" + "0" + str(random_project) + "\', \'" + "0" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong < 10 and random_project >= 10 and random_action < 10:
-        print "00" + str(random_ong) + " " + "0" + str(random_project) + " " + "00" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +   "\'00" + str(random_ong) + "\', \'" + "0" + str(random_project) + "\', \'" + "00" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong < 10 and random_project >= 10 and random_action >= 10:
-        print "00" + str(random_ong) + " " + "0" + str(random_project) + " " + "0" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +   "\'00" + str(random_ong) + "\', \'" + "0" + str(random_project) + "\', \'" + "0" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
     elif random_ong < 10 and random_project < 10 and random_action >= 10:
-        print "00" + str(random_ong) + " " + "00" + str(random_project) + " " + "0" + str(
-            random_action) + " " + str(dni_list[x])
+        print "VALUES (" +   "\'00" + str(random_ong) + "\', \'" + "00" + str(random_project) + "\', \'" + "0" + str(
+            random_action) + "\', \'" + str(dni_list[x]) + "\'" + ");"
